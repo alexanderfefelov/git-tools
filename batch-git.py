@@ -15,7 +15,7 @@ def print_usage():
 
 def process_directory(directory, command_with_args):
     os.chdir(directory)
-    os.system('git ' + command_with_args)
+    os.system('git {0}'.format(command_with_args))
     os.chdir('..')
 
 def main():
